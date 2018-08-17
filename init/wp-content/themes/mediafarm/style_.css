@@ -1,0 +1,214 @@
+/*
+  Theme Name: Gelbart
+  Theme URI: www.wordpress.org
+  Description: gelbart
+  Version: 1.1
+  Author: Machhi Chintan
+  Author URI: https://profiles.wordpress.org/machhichintan
+*/
+
+.nav {
+  height: 110px;
+  width: 100%;
+  background-color: white;
+  position: FIXED;
+  Z-INDEX: 999;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+  padding: 0 60px 0 0;
+}
+
+.nav > .nav-links > a {
+    display: inline-block;
+    padding: 25px 0px;
+    text-decoration: none !important;
+    font-size:25px;
+    line-height: 60px;
+    color: rgb(104,119,128);
+    margin: 0 0 0 35px;
+    font-family:opensanshebrew;
+}
+
+.nav > .nav-links > a:hover {
+  background-color:transparent;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+
+   .main_slider{MARGIN:60px 0 0 0 !important;}
+   .nav{height: 60px !important; position: fixed;}
+   .home_page_mediafarm .left_part_logo{padding:14px 0px 14px 15px !important;}
+   .left_part_logo img {width: 120px !important;}
+   .nav > .nav-links{padding: 0 15px 0 0 !important;}
+   .nav > .nav-links > a{    padding: 18px 0px !important; font-size: 18px !important; 
+   margin: 0 0 0 20px !important; line-height: 25px !important;}
+   
+ /* .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 0px;
+  }
+   
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 44px;
+    background-color: #000;
+    padding: 13px;
+    margin: 6px 0;
+  }
+  .nav > .nav-btn > label:hover {
+    background-color:#000;
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+        width: 25px;
+    height: 7px;
+    border-top: 2px solid #eee;
+  }
+
+ .nav > .nav-links > a{ padding: 12px 0px !important; line-height: 22px !important; font-size: 20px !important; margin: 0 15px !important; color: #fff !important;}
+
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #000;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+    z-index: 999;
+    padding: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width:95%;
+  }
+  .nav > #nav-check:not(:checked) + .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked + .nav-links {
+    height: auto;
+    overflow-y: auto;
+  }*/
+
+}
+
+.leftic{
+    transform: rotate(180deg);
+    width: 50px !important;
+}
+
+.rightic{
+    width:50px !important;
+}
+
+
+.carousel-fade .carousel-inner .item {
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+  -webkit-transition: opacity 0.8s ease-in-out;
+  -moz-transition: opacity 0.8s ease-in-out;
+  -o-transition: opacity 0.8s ease-in-out;
+  transition: opacity 0.8s ease-in-out;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+  -webkit-transition: opacity 0.8s ease-in-out;
+  -moz-transition: opacity 0.8s ease-in-out;
+  -o-transition: opacity 0.8s ease-in-out;
+  transition: opacity 0.8s ease-in-out;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+.carousel-control.right{
+    background-image: none !important;
+    padding-top: 0%;
+}
+
+.carousel-control.left{
+    background-image: none !important;
+    padding-top:0%;
+}
+
+a.carousel-control {
+    top: 48%;
+}
+
+.leftic{
+    transform: rotate(180deg);
+    width: 50px;
+}
+
+.rightic{
+    width: 50px;
+}
+html,
+body,
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+  height: 100vh;
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{width: 100%;}
+.carousel-inner img{height: 100vh !important; object-fit: cover;}
+
+
+
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+} 
